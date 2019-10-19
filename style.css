@@ -1,4 +1,63 @@
 body
 {
+	margin: 0;
 	background-color: red;
+}
+p, a, li, h1, h2, h3{
+	font-family: Arial, sans-serif;
+	color:#000;
+}
+.container
+{
+	max-width: 1080px;
+	width: 80%;
+	margin: auto;
+}
+header
+{
+	background-color: #FFF;
+}
+header .container
+{
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header figure
+{
+	margin: 0;
+}
+header figure img
+{
+	max-width: 230px;
+}
+header nav
+{
+	height: 100%;
+}
+header nav ul
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+header nav li
+{
+	height: 100%;
+	display: inline-block;
+	list-style-type: none;
+}
+header nav li a {
+    font-size: 12px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+header nav li a:hover {
+    background: linear-gradient(aqua, aqua 5%, #FFF 5%);
 }
