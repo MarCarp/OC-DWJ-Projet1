@@ -9,7 +9,7 @@ p, a, li, h1, h2, h3{
 }
 .container
 {
-	max-width: 1080px;
+	max-width: 1360px;
 	width: 80%;
 	margin: auto;
 }
@@ -60,4 +60,11 @@ header nav li a {
 }
 header nav li a:hover {
     background: linear-gradient(aqua, aqua 5%, #FFF 5%);
+}
+section#header-title
+{
+	height: 500px;
+	background-image: url("images/bg1.jpg");
+	background-size: cover;
+    background-position: center;
 }
