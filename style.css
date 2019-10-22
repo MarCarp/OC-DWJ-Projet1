@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 body
 {
 	margin: 0;
 	background-color: red;
 }
 p, a, li, h1, h2, h3{
-	font-family: Arial, sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 	color:#000;
+}
+h2{
+	font-size: 38px;
+	text-transform: uppercase;
+}
+.btn-blue {
+    background-color: #5cadd3;
+    border-bottom: 2px solid #4494bb;
+    color: white;
+    padding: 10px;
 }
 .container
 {
@@ -59,7 +70,7 @@ header nav li a {
     padding: 0 15px;
 }
 header nav li a:hover {
-    background: linear-gradient(aqua, aqua 5%, #FFF 5%);
+    background: linear-gradient(#5cadd3, #5cadd3 5%, #FFF 5%);
 }
 /* SECTION HEADER-TITLE */
 section#header-title
@@ -75,8 +86,55 @@ section#header-title .container {
     display: flex;
     align-items: center;
 }
+section#header-title .main h1 strong {
+    color: #5cadd3;
+}
+section#header-title .main h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 52px;
+}
 section#header-title .btn {
 	position: absolute;
 	height: 10px;
 	width: 10px;
+}
+/* SECTION SERVICES */
+section#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#services .en-tete {
+    text-align: center;
+}
+section#services .main {
+    display: flex;
+}
+/* SECTION PROJETS */
+section#projets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+section#projets .projects-menu li.btn-blue {
+    display: inline-block;
+}
+section#projets .projects-menu ul {
+    padding: 0;
+}
+section#projets .projects-menu li {
+	margin:0 -2px;
+	cursor: pointer;
+}
+section#projets .projects-menu li.btn-blue:first-child {
+    border-radius: 5px 0 0 5px;
+    margin-right: -2px;
+}
+section#projets .projects-menu li.btn-blue:last-child {
+    border-radius: 0 5px 5px 0;
+    margin-left: -2px;
 }
